@@ -1,0 +1,223 @@
+%% 
+%% This is file, `ultrabrief.tex',
+%% generated with the extract package.
+%% 
+%% Generated on :  2018/05/30,17:30
+%% From source  :  GR_Summary.tex
+%% Using options:  active,generate=UltraBrief,,extract-cmd=section,extract-env={noteEquation}
+%% 
+\documentclass[12pt]{article}
+\usepackage{../../../mainStructure}
+
+\begin{document}
+
+\section{Equivalence Principles}
+
+\begin{noteEquation}[Newton's Law of Gravitation]
+The differential form of Newtonian gravity is
+\begin{equation}
+\Delta \Phi = 4 \pi G \rho.
+\end{equation}
+The integral solution to this is
+\begin{equation}
+\phi(t,\mathbf{x}) = - G \int_{\mathbb{R}^3} \mathrm{d}^3y \, \frac{
+\rho(t,\mathbf{y})
+}{
+| \mathbf{x} - \mathbf{y}|.
+}
+\end{equation}
+\end{noteEquation}
+
+\section{Manifolds and Tensors}
+
+\section{The Metric Tensor}
+
+\begin{noteEquation}[Geodesic Lagrangian]\label{geoLagrange}
+To find geodesics on a Lorentzian manifold, we use a functional formula for the proper time, treating this as an action, the `Lagrangian' is
+\begin{equation}
+G(x(\lambda),\dot{x}(\lambda)) \coloneqq \sqrt{-g_{\mu\nu}(x) \dot{x}^\mu \dot{x}^\nu}.
+\end{equation}
+The proper time for a curve $x: [0,1] \hookrightarrow M$ is then
+\begin{equation}
+\tau[x] = \int_0^1 G(x(\lambda),\dot{x}(\lambda)) \mathrm{d}\lambda.
+\end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Geodesic Equation]
+The Euler-Lagrange equations for \autoref{geoLagrange} reduce to the \textbf{geodesic equation}
+\begin{equation}\label{eq:geodesic}
+\frac{d^2 x^\mu }{d \tau^2} + \Gamma^\mu_{\nu\rho} \frac{d x^\nu}{d\tau} \frac{dx^\rho}{d\tau} = 0,
+\end{equation}
+where the \textbf{Christoffel symbols} are defined by
+\begin{equation}\label{eq:Christoffel}
+\Gamma^\mu_{\nu\rho} \coloneqq \tfrac{1}{2} g^{\mu\sigma} ( g_{\sigma \nu, \rho} + g_{\sigma \rho, \nu} - g_{\nu \rho, \sigma} ).
+\end{equation}
+\end{noteEquation}
+
+\section{Covariant Derivative}
+
+\begin{noteEquation}[Tensor Coordinate Transformation]
+The generalisation of \autoref{prop:trans1} for an arbitrary $(r,s)$ tensor field is simply
+\begin{equation}
+T'^{\mu_1 \cdots \mu_r}_{\phantom{\mu_1 \cdots \mu_r} \nu_1 \cdots \nu_s} = \left( \frac{\partial x'^{\mu_1}}{\partial x^{\rho_1}} \right) \cdots \left( \frac{\partial x'^{\mu_r}}{\partial x^{\rho_r}} \right) \left( \frac{\partial x^{\sigma_1}}{\partial x'^{\nu_1}} \right) \cdots \left( \frac{\partial x^{\sigma_s}}{\partial x'^{\nu_s}} \right) T^{\rho_1 \cdots \rho_r}_{\phantom{\rho_1 \cdots \rho_r} \sigma_1 \cdots \sigma_s}
+\end{equation}
+\end{noteEquation}
+
+\section{Physical Laws in Curved Spacetime}
+
+\section{Curvature}
+
+\begin{noteEquation}
+By computing $R(e_\rho, e_\sigma) e_\nu$, we can obtain the basis-dependent form of the Riemann tensor
+\begin{equation}
+{R^\mu}_{\nu \rho \sigma} = \partial_\rho \Gamma^\mu_{\nu\sigma}
+ - \partial_\sigma \Gamma^\mu_{\nu\rho} + \Gamma^\tau_{\nu\sigma}\Gamma^\mu_{\tau\rho} - \Gamma^\tau_{\nu\rho}\Gamma^\mu_{\tau\sigma}.
+  \end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Ricci Identity]
+\begin{equation}
+\nabla_c \nabla_d Z^a - \nabla_d \nabla_c Z^a = {R^a}_{bcd} Z^b.
+\end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Symmetries of the Riemann Tensor]
+\begin{equation}
+{R^a}_{b(cd)} = 0.
+\end{equation}
+For a torsion-free connexion:
+\begin{equation}
+{R^a}_{[bcd]} = 0.
+\end{equation}
+\textit{Bianchi identity:} (also for a torsion-free connexion)
+\begin{equation}
+{R^a}_{b[cd;e]} = 0.
+\end{equation}
+If $\nabla$ is the Levi-Civita connexion for some metric $g_{ab}$, then
+\begin{equation}
+R_{abcd} = R_{cdab}, \qquad R_{(ab)cd} = 0.
+\end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Geodesic Deviation]
+Let $\nabla$ be a torsion-free connection, and let $T,S$ be vector fields such that $\nabla_T T = 0$, and $[T,S] = 0$. Then
+\begin{equation}
+\nabla_T \nabla_T S = R(T,S) T.
+\end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Contracted Bianchi Identity]
+\begin{align}
+\nabla^aG_{ab} = 0, \quad \Leftrightarrow \quad \nabla^a R_{ab} - \frac{1}{2} \nabla_b R = 0.
+\end{align}
+\end{noteEquation}
+
+\begin{noteEquation}[Einstein Equation]
+\begin{equation}
+G_{ab} = 8\pi G T_{ab}.
+\end{equation}
+If a vacuum, this reduces to
+\begin{equation}
+R_{ab} = 0.
+\end{equation}
+If we wish to include the cosmological constant, we then have
+\begin{equation}
+G_{ab} + \Lambda g_{ab} = 8 \pi G T_{ab}.
+\end{equation}
+\end{noteEquation}
+
+\section{Diffeomorphisms and the Lie Derivative}
+
+\begin{noteEquation}[Coordinate Based Pullback/Pushforward]
+Let $\phi: M \to N$ be a diffeomorphism, and let $(x^\mu)$ be a set of coordinates on $M$, and $(y^\mu)$ a set of coordinates on $N$. Then
+\begin{align}
+\left( \phi_* \frac{\partial}{\partial x^\mu} \right)
+= \left( \frac{\partial y^\nu}{\partial x^ \mu} \right) \frac{\partial }{\partial y^\nu},
+\qquad
+\left( \phi^* dy^\mu \right) = \left( \frac{\partial y^\mu }{\partial x^\nu} \right) dx^\nu.
+\end{align}
+The inverse operations, allowed by the fact that $\phi$ is a diffeomorphism, are then
+\begin{align}
+\left( \phi^* \frac{\partial}{\partial y^\mu} \right)
+= \left( \frac{\partial x^\nu}{\partial y^\mu} \right) \frac{\partial}{\partial x^\nu},
+\qquad
+\left( \phi_* dx^\mu \right)
+= \left(\frac{\partial x^\mu }{\partial y^\nu} \right) dy^\nu.
+\end{align}
+Thus, for a tensor $S$ of type $(r,s)$ on $M$, and $T$ on $N$, we have
+\begin{align}
+{\left( \phi_* S \right)^{\mu_1, \cdots, \mu_r}}_{\nu_1, \cdots \nu_s} = \left( \frac{\partial y^{\mu_1}}{\partial x^{\alpha_1}}\right) \cdots \left( \frac{\partial y^{\mu_r}}{\partial x^{\alpha_r}}\right)
+\left( \frac{\partial x^{\beta_1}}{\partial y^{\nu_1} }\right) \cdots
+\left( \frac{\partial x^{\beta_s}}{\partial y^{\nu_s} }\right)
+{S^{\alpha_1 \cdots \alpha_r}}_{\beta_1 \cdots \beta_s}.
+\end{align}
+\end{noteEquation}
+
+\begin{noteEquation}[Killing's Equation]
+A vector field $X$ is a \textbf{Killing vector field} if its flows are isometries of $g$, equivalently $\mathcal{L}_X g = 0$. This can be show to be equivalent to \textit{Killing's equation}
+\begin{equation}
+\nabla_a X_b + \nabla_b X_a = 0.
+\end{equation}
+Or, equivalently
+\end{noteEquation}
+
+\section{Linearised Theory}
+
+\begin{noteEquation}[Linearly Perturbed Metric]
+Assuming that space is `almost flat' we can find a chart such that
+\begin{equation}
+g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu},
+\end{equation}
+such that $h_{\mu\nu} \sim \mathcal{O}(\epsilon)$ and $\epsilon^2 \approx 0$. The inverse metric is then
+\begin{equation}
+g^{\mu \nu} = \eta^{\mu\nu} + h^{\mu\nu},
+\end{equation}
+where $h^{\mu\nu} = \eta^{\mu\rho} \eta^{\nu\sigma} h_{\rho \sigma} + \mathcal{O}(\epsilon^2)$.
+\end{noteEquation}
+
+\begin{noteEquation}[Linearised Levi-Civita]
+Given the above linearisation, the Christoffel symbols of the Levi-Civita connexion can be written
+\begin{equation}
+\Gamma^\mu_{\nu\rho} = \frac{1}{2}
+\eta^{\mu\sigma} (h_{\sigma \nu,\rho} + h_{\sigma \rho, \nu} - h_{\nu\rho, \sigma} ).
+\end{equation}
+This leads to the linearised Riemann tensor
+\begin{equation}
+R_{\mu\nu\rho\sigma} = \frac{1}{2}(h_{\mu\sigma, \nu\rho} + h_{\nu\rho,\mu\sigma} - h_{\nu\sigma, \mu\rho} - h_{\mu\rho, \nu\sigma}).
+\end{equation}
+And Ricci tensor
+\begin{equation}
+R_{\mu\nu} = \partial^\rho \partial_{(\mu} h_{\nu)\rho} - \frac{1}{2} \square h_{\mu\nu} - \frac{1}{2} \partial_\mu \partial_\nu h,
+\end{equation}
+where $h \coloneqq {h^\mu}_\mu$. It is also useful to define the `negative-traced' version of $h_{\mu\nu}$
+\begin{equation}
+\bar{h}_{\mu\nu} = h_{mu\nu} - \frac{1}{2}h\eta_{\mu\nu}.
+\end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Gauge Transformation of $h_{\mu\nu}$]
+We generate `infinitesimal' diffeomorphisms using the flow of some vector field $X$ for a sufficiently small parameter $t$, which is equivalent to taking the flow with unit parameter of the vector field $\xi = tX$. The result is
+\begin{equation}
+h_{\mu\nu} \to h_{\mu\nu} + \xi_{\mu,\nu} + \xi_{\nu,\mu}.
+\end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Linearised Einstein Equation (Harmonic Gauge)]
+\begin{equation}
+\square \bar{h}_{\mu\nu} = -16 \pi T_{\mu\nu}
+\end{equation}
+\end{noteEquation}
+
+\begin{noteEquation}[Gravitational Wave]
+By solving the linearised vacuum Einstein equation with the gauge conditions $\partial^\mu \bar{h}_{\mu\nu} = 0$ (Lorentz), $\bar{h}_{0\mu} = 0$ (longitudinal gauge) and $\bar{h} = 0$ (trace-free), which can all be imposed concurrently, the most general form has just two degrees of freedom
+\begin{equation}
+\bar{h}_{\mu\nu} = h_{\mu\nu} = \begin{pmatrix}
+0&0&0&0 \\
+0 & H_+   &  H_\times & 0 \\
+0 & H_\times & - H_+   & 0 \\
+0&0&0&0
+\end{pmatrix} e^{i k_\rho x^\rho}.
+\end{equation}
+\end{noteEquation}
+
+\end{document}
