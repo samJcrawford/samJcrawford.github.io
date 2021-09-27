@@ -3,4 +3,6 @@ name: Sam Crawford
 description: Maybe I'll eventually figure out what I'm doing...
 url: "http://samJcrawford.github.io"
 markdown: GFM
-theme: jekyll-theme-midnight
+remote_theme: BDHU/minimalist@v0.1.0
+plugins:
+- jekyll-remote-theme
