@@ -1,1 +1,6 @@
+# Jekyll configuration
+name: Sam hasn't figured out what he's doing yet
+description: Maybe I will eventually
+url: "http://samJcrawford.github.io"
+markdown: GFM
 theme: jekyll-theme-slate
