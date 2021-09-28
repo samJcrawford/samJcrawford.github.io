@@ -1,28 +1,25 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>sJc</title>
+ <link href="https://samJcrawford.github.io/atom.xml" rel="self"/>
+ <link href="https://samJcrawford.github.io/"/>
+ <updated>2021-09-28T21:58:23+01:00</updated>
+ <id>https://samJcrawford.github.io</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>Sam Crawford</name>
+   <email></email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>Welcome!</title>
+   <link href="https://samJcrawford.github.io/2021/09/21/Welcome.html"/>
+   <updated>2021-09-21T00:00:00+01:00</updated>
+   <id>https://samJcrawford.github.io/2021/09/21/Welcome</id>
+   <content type="html">&lt;h2 id=&quot;this-is-a-test-of-the-jekyll-theme-i-intend-to-use&quot;&gt;This is a test of the Jekyll theme I intend to use&lt;/h2&gt;
+</content>
  </entry>
- {% endfor %}
+ 
 
 </feed>
