@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
 
 # Chirpy theme config
-avatar: /assets/bunny.png
+avatar: /assets/img/bunny.png
 
 # Exclude from processing.
 # The following items will not be processed, by default.
