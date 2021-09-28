@@ -30,3 +30,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Because bundler is a hot fucken mess
 gem "webrick", "~> 1.7"
+
+# Trying out the chirpy theme
+# See https://chirpy.cotes.info/posts/getting-started/
+gem "jekyll-theme-chirpy"

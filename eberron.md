@@ -1,3 +1,8 @@
+---
+layout: page
+permalink: /eberron/
+---
+
 # Eberron campaign notes
 
 # Misc notes
