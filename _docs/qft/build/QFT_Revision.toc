@@ -1,4 +1,0 @@
-\contentsline {section}{\numberline {1}Classical Field Theory}{2}{section.1}
-\contentsline {section}{\numberline {A}Proofs}{4}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Proof of Proposition \ref {prop:E-L_Equations}}{4}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Proof of Proposition \ref {prop:Noether} (Nother's Theorem)}{4}{subsection.A.2}
