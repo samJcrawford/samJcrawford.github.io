@@ -1,0 +1,3 @@
+\begin{XTRprop}
+If $\lambda = \sum_i \lambda^i \omega_{(i)} \in S_R$, then $\lambda - \sum_i m^i \alpha_{(i)} \in S_R \forall m^i \in \{0, 1, \cdots, \lambda^i \}$. In words, the Dynkin labels of a weight $\lambda$ tell us how many times the corresponding \textit{root} can be subtracted from that weight. Thus, if a weight has no positive roots, this result cannot be applied.
+\end{XTRprop}

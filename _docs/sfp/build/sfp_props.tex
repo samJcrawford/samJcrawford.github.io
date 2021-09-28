@@ -1,0 +1,155 @@
+%% 
+%% This is file, `sfp_props.tex',
+%% generated with the extract package.
+%% 
+%% Generated on :  2018/06/02,14:39
+%% From source  :  SFP_Notes.tex
+%% Using options:  active,generate=SFP_Props,extract-cmd=section,extract-env={prop}
+%% 
+\documentclass[11pt,final]{article}
+\usepackage{../../../mainStructure}
+\fancyhf{}
+\fancyhead[L]{Symmetries Fields and Particles}
+\fancyhead[R]{Propositions}
+
+\begin{document}
+\title{Symmetries, Fields and Particles\\
+\Large{Summary Notes} \\ \hrulefill}
+\author{Sam Crawford\\
+\large{\textsl{Based on the Course Given by Nick Dorey}}}
+\date{Michaelmas 2017}
+
+\maketitle
+
+\section{Lie Groups and Lie Algebras}
+
+\begin{prop}
+The space of left-invariant vector fields is an $n=\text{dim}(G)$ dimensional vector space which is homeomorphic to $T_eG$, the tangent space to the identity of $G$.
+\end{prop}
+
+\begin{prop}
+The space of left-invariant vector fields on a Lie group $G$ is closed under the Lie bracket $[X,Y]\circ f \coloneqq X\circ(Y\circ f) - Y \circ (X \circ f)$, and thus forms a Lie algebra $\mathfrak{g}$.
+\end{prop}
+
+\section{Representations}
+
+\begin{prop}
+If $\text{Exp}(\mathfrak{g}) = H \subset G$ is bijective, then a representation $R$ of $\mathfrak{g}$ `exponentiates' to the representation $D(\text{Exp}(x)) = \text{Exp}(R(x))$ of $H$.
+\end{prop}
+
+\begin{prop}
+Let $R : \mathfrak{su}(2) \to GL(V)$ be a finite dimensional \textit{irreducible} representation. Then for any eigenvalue $v$ of $R(H)$, the set
+\begin{align*}
+\{ R(E^\pm)^nv \neq 0 : n \in \mathbb{Z}^+ \}
+\end{align*}
+forms an eigenbasis of $V$ with respect to $R(H)$.
+\end{prop}
+
+\begin{prop}
+All finite number of tensor products of finite dimensional irreps of a complex simple Lie algebra are fully reducible. I.e., if $|\mathcal{R}|, |\mathcal{R}'| \in \mathbb{N}$
+\begin{align}\label{RepDecompositions}
+\bigotimes_{R \in \mathcal{R}} R = \bigoplus_{R' \in \mathcal{R}'} \mathfrak{M}(R') R',
+\end{align}
+where $\mathfrak{M}(R') \in \mathbb{Z}$ denotes the \textit{multiplicity} of the rep $R'$ in the decomposition.
+\end{prop}
+
+\section{The Cartan Classification}
+
+\begin{prop}
+The Killing form of a Lie algebra is \textbf{invariant}, defined as the property
+\begin{align}
+\kappa ( \text{Ad}_z x,y) = - \kappa( x, \text{Ad}_z y),
+\end{align}
+i.e. $\text{Ad}_z$ is a skew-adjoint operator $\forall \, z \in \mathfrak{g}$.
+\end{prop}
+
+\begin{prop}
+All CSAs of a Lie algebra have the same dimension.
+\end{prop}
+
+\begin{prop}[Some facts step operators and the Killing form]
+\begin{enumerate}[label=(\roman*)]
+\item \label{CWBFact1} $\kappa(H,E^\alpha) = 0, \forall H \in \mathfrak{h}, \alpha \in \Phi$
+\item \label{CWBFact2} $\kappa(E^\alpha, E^\beta) = 0, \forall \alpha \neq -\beta$
+\item \label{CWBFact3} $\forall H \in \mathfrak{h}, \, \exists \, H' \in \mathfrak{h}$ s.t. $\kappa(H,H') \neq 0$
+\item \label{CWBFact4} $\forall \alpha \in \Phi, -\alpha \in \Phi$, and $\kappa(E^\alpha, E^{-\alpha}) \neq 0$.
+\end{enumerate}
+\end{prop}
+
+\begin{prop}
+The root set $\Phi$ spans $\mathfrak{h}^*$
+\end{prop}
+
+\begin{prop}
+Let $\{ \alpha_{(i)} \}_{i=1}^r \subset \Phi$ be any set of linearly independent roots, then $\Phi \subset \text{Span}_\mathbb{R} \{ \alpha_{(i)} \} \eqqcolon \mathfrak{h}_\mathbb{R}$.
+\end{prop}
+
+\begin{prop}\label{prop:realRootGeometry}
+Let $\mathfrak{h}_\mathbb{R}$ be as before, then the map $(\cdot,\cdot): \mathfrak{h}_\mathbb{R} \times \mathfrak{h}_\mathbb{R} \to \mathbb{R}$ is a Euclidean inner product.
+\end{prop}
+
+\begin{prop}[Properties of Simple Roots]\label{prop:SimpleRootProps}
+Let $\alpha, \beta \in \Phi$ be simple roots, then:
+\begin{ronumerate}
+\item $(\alpha - \beta) \notin \Phi$
+\item The $\alpha$-string through $\beta$ has length
+\begin{equation}
+\ell_{\alpha,\beta} = 1 - 2\frac{(\alpha,\beta)}{(\alpha,\alpha)}
+\end{equation}
+\item $(\alpha,\beta) \leq 0.$
+\item Any positive root can be written as a linear combination of simple roots with \textit{integer} coefficients, thus the simple roots span $\mathfrak{h}^*_\mathbb{R}$
+\end{ronumerate}
+\end{prop}
+
+\begin{prop}
+Simple roots are linearly independent in $\mathfrak{h}^*_{\mathbb{R}}$.
+\end{prop}
+
+\begin{prop}[Constraints on the Cartan Matrix]\label{prop:CartanConstraints}
+\begin{ronumerate}
+\item[(0)] $A^{ji} \in \mathbb{Z}$,
+\item $A^{ii} = 2$,
+\item $A^{ij} = 0 \Leftrightarrow A^{ji} = 0$,
+\item $A^{ij} < 0 \forall i \neq j$,
+\item $A = DS$ for some diagonal matrix $D$ and some positive definite matrix $S$
+\end{ronumerate}
+\end{prop}
+
+\begin{prop}
+For $i\neq j$, the only valid pairs of values for $(A^{ij},A^{ji})$ are (order irrelevant): $(0,0), (-1,-1), (-1,-2), (-1,-3)$ .
+\end{prop}
+
+\section{Reconstructing the Lie Algebra}
+
+\begin{prop}[Some Facts About Weights of Representations]
+\begin{ronumerate}
+\item Let $S$ denote the set of weights of a representation, the representation space is then spanned by
+\begin{equation}\label{eq:CrudeWeightSpan}
+V = \bigoplus_{\lambda \in S_R} V_\lambda,
+\end{equation}
+\item For a weight $\lambda$ and root $\alpha$, if $\lambda + \alpha$ is also a weight, then
+\begin{equation}
+R(e^\alpha) : V_\lambda \to V_{\lambda + \alpha}.
+\end{equation}
+\item For a weight $\lambda$ and root $\alpha$, $v \in V_\lambda$
+\begin{equation}
+R(h^\alpha)v = 2\frac{(\alpha, \lambda)}{(\alpha, \alpha)} \in \mathbb{Z}
+\end{equation}
+\end{ronumerate}
+\end{prop}
+
+\begin{prop}
+Every finite dimensional irreducible representation $R:\mathfrak{g} \to GL(V)$ has a \textbf{highest weight} $\Lambda \in \mathcal{L}_W[\mathfrak{g}]$ with respect to some choice of $\Phi_+$ such that, $\forall v \in V_{\Lambda}, \alpha \in \Phi_+$, $R(e^\alpha) v = 0$. Further more, all other weights of the representation are of the form
+\begin{equation}\label{eq:weightSpan}
+\lambda = \Lambda - \sum_{i=1}^r \mu^i \alpha_{(i)},
+\end{equation}
+for some $\mu^i \in \mathbb{Z}^+$. The highest weight characterises a representation uniquely up to isomorphism.
+\end{prop}
+
+\begin{prop}
+If $\lambda = \sum_i \lambda^i \omega_{(i)} \in S_R$, then $\lambda - \sum_i m^i \alpha_{(i)} \in S_R \forall m^i \in \{0, 1, \cdots, \lambda^i \}$. In words, the Dynkin labels of a weight $\lambda$ tell us how many times the corresponding \textit{root} can be subtracted from that weight. Thus, if a weight has no positive roots, this result cannot be applied.
+\end{prop}
+
+\section{Symmetries in Quantum Mechanics}
+
+\end{document}
