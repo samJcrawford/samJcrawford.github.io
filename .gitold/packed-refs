@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+161dc8a1e139dd06bff349cb6a2c4bd4975b6ba0 refs/remotes/origin/jekyll3
+b92e135a2ad38a2cd2f638d1882a3ef87de9b90e refs/remotes/origin/master
+3d62298f51a7dc09b1e9424e40a4ca5e9315676e refs/tags/1.0.0
+b1ec57a92fc677e574f2678b5427b527c3f28ba2 refs/tags/1.0.1
