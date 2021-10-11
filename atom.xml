@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>sJc</title>
- <link href="https://samJcrawford.github.io/atom.xml" rel="self"/>
- <link href="https://samJcrawford.github.io/"/>
- <updated>2021-09-28T22:11:36+01:00</updated>
- <id>https://samJcrawford.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2021-09-30T14:52:53+01:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Sam Crawford</name>
    <email></email>
@@ -14,10 +14,31 @@
  
  <entry>
    <title>Welcome!</title>
-   <link href="https://samJcrawford.github.io/2021/09/21/Welcome.html"/>
+   <link href="http://localhost:4000/2021/09/21/Welcome.html"/>
    <updated>2021-09-21T00:00:00+01:00</updated>
-   <id>https://samJcrawford.github.io/2021/09/21/Welcome</id>
+   <id>http://localhost:4000/2021/09/21/Welcome</id>
    <content type="html">&lt;h2 id=&quot;this-is-a-test-of-the-jekyll-theme-i-intend-to-use&quot;&gt;This is a test of the Jekyll theme I intend to use&lt;/h2&gt;
+
+&lt;p&gt;Let’s try some maths:
+\(E = mc^2\)&lt;/p&gt;
+
+&lt;p&gt;The naturality of a locally covariant quantum field can be expressed as the equation&lt;/p&gt;
+
+\[\mathfrak{A} \chi \Phi_\mathcal{M}(f)
+        =
+    \Phi_\mathcal{N}(\mathfrak{D} \chi f)\]
+
+&lt;p&gt;or equivalently in terms of the diagram&lt;/p&gt;
+
+\[\require{AMScd}
+    \begin{CD}
+        \mathfrak{D}(\mathcal{M})   @&amp;gt;\Phi_\mathcal{M}&amp;gt;&amp;gt;   \mathfrak{A}(\mathcal{M})\\
+        @VV\mathfrak{D}\chi V                               @VV\mathfrak{A}\chi V\\
+        \mathfrak{D}(\mathcal{N})   @&amp;gt;\Phi_\mathcal{N}&amp;gt;&amp;gt;   \mathfrak{A}(\mathcal{N})
+    \end{CD}\]
+
+&lt;p&gt;which itself may be expressed using the short hand
+\(\Phi: \mathfrak{D} \Rightarrow \mathfrak{A}\)&lt;/p&gt;
 </content>
  </entry>
  
